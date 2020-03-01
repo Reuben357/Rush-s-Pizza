@@ -1,0 +1,22 @@
+.info{
+    background: grey
+}
+
+body{
+    font-family: 'Mr Dafoe',cursive ; 
+    color:grey;
+}
+.main-color{
+    color:violet;
+}
+.info h2{
+    word-spacing: 0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out;
+}
+.info a:hover{
+    color: black;
+}
+
+/* ######### header######### */
