@@ -125,3 +125,49 @@ body{
     }  
 
 }
+/* ##### nav bar ###### */
+.navbar{
+    background:grey;
+    padding: 20px 20px;
+    transition: all 2s ease;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    transition: all 2s ease;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    color:brown;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 53px;
+}
+.nav-link:hover{
+    color: black;
+}
+.nav-btn{
+    background: transparent;
+    color: brown;
+    border: 2px solid brown;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color: brown;
+    border: 2px solid black;
+    transform: rotate(10deg);
+}
+
+/* .bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: brown;
+    transition: all 0.;
+} */
+
+
