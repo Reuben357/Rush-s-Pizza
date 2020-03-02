@@ -1,13 +1,13 @@
 .info{
-    background: grey
+    background: grey;
 }
 
 body{
     font-family: 'Mr Dafoe',cursive ; 
-    color:grey;
+    color:black;
 }
 .main-color{
-    color:violet;
+    color:brown;
 }
 .info h2{
     word-spacing: 0.6rem;
@@ -19,4 +19,3 @@ body{
     color: black;
 }
 
-/* ######### header######### */
