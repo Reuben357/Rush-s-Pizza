@@ -181,4 +181,12 @@ body{
 }
 
 
+/* ##### menu ##### */
+#menu{
+    background: url(../images/pizza-2446700_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: fixed no-repeat;
+}
+
 
