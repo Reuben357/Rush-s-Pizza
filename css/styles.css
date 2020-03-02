@@ -189,4 +189,13 @@ body{
     background-repeat: fixed no-repeat;
 }
 
-
+/* #### footer ### */
+#back-to-top{
+    background: grey;
+    border-radius: 10px;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+    font-size: 50;
+}
