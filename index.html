@@ -111,7 +111,22 @@
 
                     </div>
                     <!-- end of crusts -->
-                    
+                    <!-- sizes -->
+
+                    <label for="sizes">Chose your preferred Size:</label>
+                    <select id="sizes" class="custom-select custom-select-md mb-3" required>
+                        <option value="400">Regular</option>
+                        <option value="800">Medium</option>
+                        <option value="1200">Large</option>
+                    </select>
+                    <!-- end of sizes -->
+
+                    <label for="number">Number of Pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                        max="10" required>
+                    <button type="submit" class="btn btn-danger checkout" id="order">Order</button>
+    </section>
+  
     <!-- jquery -->
     <script src="js/jquery-3.4.1.js"></script>
     <!-- bootstrap js -->
