@@ -171,3 +171,14 @@ body{
 } */
 
 
+/* #### toppings ### */
+#selections{
+    background: url(../images/vaishnav-chogale-cvfxrmFYkZ8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: fixed no-repeat;
+    font-size: 50px;
+}
+
+
+
