@@ -7,7 +7,7 @@ Reuben Gathii
 * CSS
 * JavaScript 
 * Jquery
-* Google fotns
+* Google fonts
 * Font awesome
 #### Installation Instructions
 * Folk the project
