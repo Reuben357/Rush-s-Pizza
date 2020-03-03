@@ -1,0 +1,201 @@
+.info{
+    background: grey;
+}
+
+body{
+    font-family: 'Mr Dafoe',cursive ; 
+    color:black;
+}
+.main-color{
+    color:brown;
+}
+.info h2{
+    word-spacing: 0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out;
+}
+.info a:hover{
+    color: black;
+}
+
+/* ######### header######### */
+#header{
+    min-height: calc(100vh-94px);
+    background: url(../images/mink-mingle-IX6vgLXvNSY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 94px); 
+}
+.banner h1{
+    border-top: 6px dotted grey;
+    border-bottom: 6px dotted grey;
+    animation: fromleft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromleft{
+    0%{
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+
+}
+
+
+
+.main-btn{
+    color:brown;
+    font-size: 2rem;
+    border: 2px solid violet;
+    transition: all is ease-in-out ;
+}
+.main-btn:hover{
+    color: black;
+    border: 2px solid grey;
+    background:grey;
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: grey;
+    border-radius: 10px;
+    transition: all is ease;
+    animation: frombottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.header-link:hover{
+    color: black; 
+}
+
+@keyframes frombottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+.main-btn{
+    animation: fromright;
+    border-top: 6px dotted black;
+    border-bottom: 6px dotted black;
+    animation: fromright;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards
+}
+
+@keyframes fromright{
+    0%{
+        transform: translatex(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }  
+
+}
+/* ##### nav bar ###### */
+.navbar{
+    background:grey;
+    padding: 20px 20px;
+    transition: all 2s ease;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    transition: all 2s ease;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    color:brown;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 53px;
+}
+.nav-link:hover{
+    color: black;
+}
+.nav-btn{
+    background: transparent;
+    color: brown;
+    border: 2px solid brown;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color: brown;
+    border: 2px solid black;
+    transform: rotate(10deg);
+}
+
+/* .bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: brown;
+    transition: all 0.;
+} */
+
+
+/* #### toppings ### */
+#selections{
+    background: url(../images/vaishnav-chogale-cvfxrmFYkZ8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: fixed no-repeat;
+    font-size: 50px;
+}
+
+
+/* ##### menu ##### */
+#menu{
+    background: url(../images/pizza-2446700_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: fixed no-repeat;
+}
+
+/* #### footer ### */
+#back-to-top{
+    background: grey;
+    border-radius: 10px;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+    font-size: 50px;
+}

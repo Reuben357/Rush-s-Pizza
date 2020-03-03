@@ -1,12 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rush's Pizza</title>
-    
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- styles css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font awesome js -->
+    <script src="js/all.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <!-- social icons -->
+    <div class="container-fluid info p-3" id="top-icons">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-base-line flex-wrap">
+                <div class="info-icons p-2">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="mr-2 main-color"><i
+                            class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" class="mr-2 main-color"><i
+                            class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/" class="mr-2 main-color"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+                <h2 class="main-color text-capitalize">welcome one welcome all</h2>
+            </div>
+        </div>
+    </div>
+    <!-- end of social icons -->
+    <!-- header section -->
+    <header id="header">
+        <div class="container">
+            <div class="row height-90 align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 text-capitalize w-50 mx-auto">
+                            <small>rush's</small> <strong class="main-color">pizza</strong>
+                        </h1>
+                        <a href="#order" class="btn main-btn rush's-btn my-4 text-capitalize">order online</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a href="#special-items" class="btn header-link main-color"><i class="fas fa-arrow-down"></i></a>
+    </header>
+    <!-- end of header section -->
+
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md">
+        <a href="#" class="navbar-brand text-uppercase main-color">rush's pizza</a>
+
+        <!-- links -->
+
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a href="#menu" class="nav-link text-capitalize">menu</a>
+                <a href="#contact" class="nav-link text-capitalize">contact</a>
+
+            </li>
+        </ul>
+        </div>
+
+    </nav>
+    <!-- end of nav bar -->
+
+
+    <section id="selections" class="py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="main-color text-uppercase">toppings</h1>
+                        </div>
+                    </div>
+                    <!-- end of title -->
+
+                    <!-- toppings -->
+                    <label for="toppings">Select Your favourite Toppings</label>
+                    <select id="toppings" class="custom-select custom-select-md mb-3" required>
+                        <option value="80">Tomato @ sh. 80</option>
+                        <option value="80">Onions @ sh. 80</option>
+                        <option value="80">Mushroom @ sh. 80</option>
+                        <option value="120">Olives @ sh. 120</option>
+                        <option value="120">Pineapple @ sh. 120</option>
+                        <option value="170">Beef Peperoni @ sh. 170</option>
+                        <option value="170">Periperi Chicken @ sh. 170</option>
+                    </select>
+                    <!-- end of toppings -->
+                    <!-- crusts -->
+
+                    <div class="col-md-4">
+                        <div class="col">
+                            <h1 class="main-color text-uppercase">crust</h1>
+                        </div>
+                        <label for="crusts">Choose your favorite Crust:</label>
+                        <select id="crusts" class="custom-select custom-select-md mb-3" required>
+                            <option value="100">Thin Crust @ Ksh. 100</option>
+                            <option value="150">Thick Crust @ Ksh. 150</option>
+                            <option value="180">FlatBread Crust @ sh. 180</option>
+                            <option value="280">Custom Crust @ sh. 280</option>
+                        </select>
+
+                    </div>
+                    <!-- end of crusts -->
+                    <!-- sizes -->
+
+                    <label for="sizes">Chose your preferred Size:</label>
+                    <select id="sizes" class="custom-select custom-select-md mb-3" required>
+                        <option value="400">Regular</option>
+                        <option value="800">Medium</option>
+                        <option value="1200">Large</option>
+                    </select>
+                    <!-- end of sizes -->
+
+                    <label for="number">Number of Pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                        max="10" required>
+                    <button type="submit" class="btn btn-danger checkout" id="order">Order</button>
+    </section>
+    <div class="row">
+        <div class="col">
+            <h1 class="main-color text-uppercase text-center" id="summary">Delivery</h1>
+
+            <div class="d-block">
+                <button class="deliver">Make Delivery</button>
+                <button class="delivernot">Pick up</button>
+            </div>
+        </div>
+    </div>
+    <div class="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary</h1>
+        <h2 class="text-center summary">Your order is as follows:</h2>
+        <ul id="list" class="text-center sum">
+        </ul>
+    </div>
+
+    <!-- menu section -->
+    <section id="menu" class="py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="main-color text-uppercase">Pizza</h1>
+                        </div>
+                    </div>
+                    <!-- end of title -->
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3">
+                        <div class="single-item-text">
+                            <h2 class="text-uppercase text-dark">veg tikka</h2>
+                            <h4 class="text-muted">Sweetcorn-red &green pepper-mushroom onion-jalapenos-tikka sauce
+                            </h4>
+                        </div>
+                        <div class="single-item-price align-self-end">
+                            <h1 class="text-uppercase text-dark" value="800">ksh 800</h1>
+
+
+                            <!-- end of single item -->
+                            <!-- end of first column -->
+                            <div class="col-md-6">
+                                <!-- single item -->
+                                <div class="single-item d-flex justify-content-between my-3 p-3">
+                                    <div class="single-item-text">
+                                        <h2 class="text-uppercase text-dark">chicken tikka</h2>
+                                        <h4 class="text-muted">Marinated tikka chicken -green pepper-onion
+                                        </h4>
+                                    </div>
+                                    <div class="single-item-price align-self-end">
+                                        <h1 class="text-uppercase text-dark" value="500">ksh 500</h1>
+
+                                    </div>
+                                    <!-- end of single item -->
+                                    <div class="col-md-6">
+                                        <!-- single item -->
+                                        <div class="single-item d-flex justify-content-between my-3 p-3">
+                                            <div class="single-item-text">
+                                                <h2 class="text-uppercase text-dark">Peri-Peri Chicken</h2>
+                                                <h4 class="text-muted">Spicy peri-peri chicken
+                                                </h4>
+                                            </div>
+                                            <div class="single-item-price align-self-end">
+                                                <h1 class="text-uppercase text-dark" value="530">ksh 530</h1>
+
+                                            </div>
+                                            <!-- end of single item -->
+                                            <div class="col-md-6">
+                                                <!-- single item -->
+                                                <div class="single-item d-flex justify-content-between my-3 p-3">
+                                                    <div class="single-item-text">
+                                                        <h2 class="text-uppercase text-dark">bbq</h2>
+                                                        <h4 class="text-muted">Marinated BBq steak
+                                                        </h4>
+                                                    </div>
+                                                    <div class="single-item-price align-self-end">
+                                                        <h1 class="text-uppercase text-dark" value="750">ksh 750</h1>
+
+                                                    </div>
+                                                    <!-- end of single item -->
+                                                    <div class="col-md-6">
+                                                        <!-- single item -->
+                                                        <div
+                                                            class="single-item d-flex justify-content-between my-3 p-3">
+                                                            <div class="single-item-text">
+                                                                <h2 class="text-uppercase text-dark">boerewors</h2>
+                                                                <h4 class="text-muted">100% beef mince-fresh
+                                                                    tomato-fresh onion
+                                                                </h4>
+                                                            </div>
+                                                            <div class="single-item-price align-self-end">
+                                                                <h1 class="text-uppercase text-dark" vlaue="600">ksh 600
+                                                                </h1>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    </section>
+    
+    <!-- contact section -->
+    <footer>
+        <div id="contact">
+            <h3 class="cont">Contacts</h3>
+            <p><a class="mail" href="mailto:gathiireuben@gmail.com">Email me </a></p>
+        </div>
+    </footer>
+<!-- end of contact section -->
+    <a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up main-color fa-3x"></i></a>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
